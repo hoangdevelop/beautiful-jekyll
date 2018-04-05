@@ -63,6 +63,7 @@ Nguyên lý cuối cùng, tương ứng với chữ D trong SOLID. Nội dung ng
 + Interface (abstraction) không nên phụ thuộc vào chi tiết, mà ngược lại.
 ( Các class giao tiếp với nhau thông qua interface, 
 không phải thông qua implementation.)
+
 Nguyên lý này khá lắt léo, mình sẽ lấy ví dụ thực tế. Chúng ta đều biết 2 loại đèn: đèn tròn và đèn huỳnh quang. Chúng cùng có đuôi tròn, do đó ta có thể thay thế đèn tròn bằng đèn huỳnh quanh cho nhau 1 cách dễ dàng.
 
 Ở đây, interface chính là đuôi tròn, implementation là bóng đèn tròn và bóng đèn huỳnh quang. Ta có thể swap dễ dàng giữa 2 loại bóng vì ổ điện chỉ quan tâm tới interface (đuôi tròn), không quan tâm tới implementation.
