@@ -1,6 +1,7 @@
 .highlight {
     background-color: #002b36;
-    color: #93a1a1
+    color: #93a1a1;
+    border-radius: 0px;
 }
 
 .highlight .c,.highlight .lineno {
