@@ -25,7 +25,6 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Home: "https://hoangdevelop.github.io"
   About Me: "aboutme"
-  What I am doing Now: "#"
   Visualize My Experience:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
