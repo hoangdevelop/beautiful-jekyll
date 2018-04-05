@@ -671,17 +671,11 @@ pre {
 pre code {
   white-space: pre;
 }
-pre.highlight, .highlight > pre, td.code pre {
-  border-left: 7px solid #444;
-}
 code table, code table td, code table th, code table tbody, code table tr,
 td.gutter pre {
   padding: 0;
   border: none;
   background-color: #fff;
-}
-.highlight > pre {
-  padding: 0;
 }
 td.code pre {
   border-width: 0 0 0 2px;
