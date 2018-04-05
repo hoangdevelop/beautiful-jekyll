@@ -14,7 +14,7 @@ baseurl: "/"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Hoang Nguyen
+title: 
 
 # Short description of your site
 description: A virtual proof that name is awesome!
@@ -92,7 +92,7 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
   google: false
   linkedin: true
