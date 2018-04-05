@@ -1,16 +1,16 @@
 ---
 layout: post
-title: S.O.L.I.D 5 nguyên lý đầu tiên của thiết kế hướng đối tượng
+title: S.O.L.I.D 5 nguyên lý thiết kế hướng đối tượng lập trình viên nào cũng cần phải nắm
 ---
 
 SOLID là 5 chữ cái đầu tiên của 5 nguyên lý sau đây.
 Nắm vững những nguyên lý này, đồng thời áp dụng chúng trong việc thiết kế và viết code sẽ giúp mã nguồn dễ đọc, dễ bảo trì và mở rộng.
 
-..* **S** - Single-responsiblity principle
-..* **O** - Open-closed principle
-..* **L** - Liskov substitution principle
-..* **I** - Interface segregation principle
-..* **D** - Dependency Inversion Principle
++ **S** - Single-responsiblity principle
++ **O** - Open-closed principle
++ **L** - Liskov substitution principle
++ **I** - Interface segregation principle
++ **D** - Dependency Inversion Principle
 
 ![Crepe](https://cdn.scotch.io/scotchy-uploads/2015/03/solid-object-oriented-design.jpg)
 
