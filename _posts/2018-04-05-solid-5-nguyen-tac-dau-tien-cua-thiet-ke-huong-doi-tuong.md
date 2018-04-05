@@ -1,11 +1,10 @@
 ---
 layout: post
-title: S.O.L.I.D 5 nguyên tắc đầu tiên của thiết kế hướng đối tượng
+title: S.O.L.I.D 5 nguyên lý đầu tiên của thiết kế hướng đối tượng
 ---
 
-SOLID là gì
-
-SOLID là 5 chữ cái đầu tiên của 5 nguyên tắc sau đây.
+SOLID là 5 chữ cái đầu tiên của 5 nguyên lý sau đây.
+Nắm vững những nguyên lý này, đồng thời áp dụng chúng trong việc thiết kế và viết code sẽ giúp mã nguồn dễ đọc, dễ bảo trì và mở rộng.
 
 S - Single-responsiblity principle
 O - Open-closed principle
@@ -13,9 +12,9 @@ L - Liskov substitution principle
 I - Interface segregation principle
 D - Dependency Inversion Principle
 
-Nắm vững những nguyên lý này, đồng thời áp dụng chúng trong việc thiết kế và viết code sẽ giúp mã nguồn dễ đọc, dễ bảo trì và mở rộng
+![Crepe](https://cdn.scotch.io/scotchy-uploads/2015/03/solid-object-oriented-design.jpg)
 
-1. Single responsibility principle
+##1. Single responsibility principle
 
 Nguyên lý đầu tiên, tương ứng với chữ S trong SOLID. Nội dung nguyên lý:
 
@@ -23,16 +22,18 @@ Một class chỉ nên giữ 1 trách nhiệm duy nhất
 (Chỉ có thể sửa đổi class với 1 lý do duy nhất)
 Để hiểu nguyên lý này, ta hãy lấy ví dụ với 1 class vi phạm nguyên lý. Ta có 1 class như sau
 
+~~~
 public class ReportManager()
 {
    public void ReadDataFromDB();
    public void ProcessData();
    public void PrintReport();
 }
+~~~
 
 Class này giữ tới 3 trách nhiệm: Đọc dữ liệu từ DB, xử lý dữ liệu, in kết quả. Do đó, chỉ cần ta thay đổi DB, thay đổi cách xuất kết quả, … ta sẽ phải sửa đổi class này. Càng về sau class sẽ càng phình to ra. Theo đúng nguyên lý, ta phải tách class này ra làm 3 class riêng. Tuy số lượng class nhiều hơn những việc sửa chữa sẽ đơn giản hơn, class ngắn hơn nên cũng ít bug hơn.
 
-2. Open/closed principle
+##2. Open/closed principle
 
 Nguyên lý thứ hai, tương ứng với chữ O trong SOLID. Nội dung nguyên lý:
 
@@ -40,21 +41,21 @@ Có thể thoải mái mở rộng 1 class, nhưng không được sửa đổi 
 (open for extension but closed for modification).
 Theo nguyên lý này, mỗi khi ta muốn thêm chức năng,.. cho chương trình, chúng ta nên viết class mới mở rộng class cũ ( bằng cách kế thừa hoặc sở hữu class cũ) không nên sửa đổi class cũ.
 
-3. Liskov Substitution Principle
+##3. Liskov Substitution Principle
 
 Nguyên lý thứ ba, tương ứng với chữ L trong SOLID. Nội dung nguyên lý:
 
 Trong một chương trình, các object của class con có thể thay thế class cha mà không làm thay đổi tính đúng đắn của chương trình
 Hơi khó hiểu? Không sao, lúc mới đọc mình cũng vậy. Hãy tưởng tượng bạn có 1 class cha tên Vịt. Các class VịtBầu, VịtXiêm có thể kế thừa class này, chương trình chạy bình thường. Tuy nhiên nếu ta viết class VịtChạyPin, cần pin mới chạy được. Khi class này kế thừa class Vịt, vì không có pin không chạy được, sẽ gây lỗi. Đó là 1 trường hợp vi phạm nguyên lý này.
 
-4. Interface Segregation Principle
+##4. Interface Segregation Principle
 
 Nguyên lý thứ tư, tương ứng với chữ I trong SOLID. Nội dung nguyên lý:
 
 Thay vì dùng 1 interface lớn, ta nên tách thành nhiều interface nhỏ, với nhiều mục đích cụ thể
 Nguyên lý này khá dễ hiểu. Hãy tưởng tượng chúng ta có 1 interface lớn, khoảng 100 methods. Việc implements sẽ khá cực khổ, ngoài ra còn có thể dư thừa vì 1 class không cần dùng hết 100 method. Khi tách interface ra thành nhiều interface nhỏ, gồm các method liên quan tới nhau, việc implement và quản lý sẽ dễ hơn.
 
-5. Dependency inversion principle
+##5. Dependency inversion principle
 
 Nguyên lý cuối cùng, tương ứng với chữ D trong SOLID. Nội dung nguyên lý:
 
@@ -69,11 +70,7 @@ Nguyên lý này khá lắt léo, mình sẽ lấy ví dụ thực tế. Chúng 
 
 Trong code cũng vậy, khi áp dụng Dependency Inverse, ta chỉ cần quan tâm tới interface. Để kết nối tới database, ta chỉ cần gọi hàm Get, Save … của Interface IDataAccess. Khi thay database, ta chỉ cần thay implementation của interface này.
 
-Mình nói khá kĩ về nguyên lí này vì nó khá quan trọng. Về sau mình sẽ viết 1 bài riêng về Dependency Injection (Dependency Injection chỉ là 1 trong những pattern để hiện thực Dependency Inversion, Dependency Injection != Dependency Inversion nhé các bạn), cùng với 1 số Dependency Injection Framework cơ bản.
-
-Bài viết khá dài, xin có lời khen với các bạn đã kiên nhẫn đọc hết. Ở những bài viết sau mình sẽ giải thích rõ hơn về từng nguyên lý SOLID này, cùng với code mình họa + cách áp dụng nguyên lí vào quá trình code.
-
-Trích lược từ: https://toidicodedao.com/2015/03/24/solid-la-gi-ap-dung-cac-nguyen-ly-solid-de-tro-thanh-lap-trinh-vien-code-cung/
+Trích lược từ: [toidicodedao](https://toidicodedao.com/2015/03/24/solid-la-gi-ap-dung-cac-nguyen-ly-solid-de-tro-thanh-lap-trinh-vien-code-cung/)
 
 
 
