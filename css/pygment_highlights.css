@@ -65,6 +65,8 @@
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */
 .highlight code, .highlight pre {
-color:#fdce93;
-background-color:#3f3f3f;
+    color: #fdce93;
+    background-color: #3f3f3f;
+    font-size: 14px;
+    font-weight: normal;
 }
