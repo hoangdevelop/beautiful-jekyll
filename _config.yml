@@ -17,7 +17,7 @@ baseurl: "/"
 title: 'Hoang Nguyen'
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Senior PHP Developer!
 
 # --- Navigation bar options --- #
 
@@ -92,9 +92,9 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
+  twitter: true
   facebook: true
-  google: false
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer
@@ -136,11 +136,11 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Asia/Ho_Chi_Minh"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 10
 
 kramdown:
   input: GFM
