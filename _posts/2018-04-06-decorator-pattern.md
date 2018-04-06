@@ -3,9 +3,8 @@ layout: post
 title: Decorator pattern.
 tags: [OOP, Design Patterns]
 ---
-Đôi khi chúng ta cần mở rộng một phương thức trong đối tượng, và cách thông thường là chúng ta sẽ kế thừa đối tượng đó. Việc này không phải sai, nhưng trong một vài trường hợp sẽ làm cho mã nguồn trở lên phức tạp hơn chúng ta mong muốn. Đó là lý do chính cho việc ra đời của mẫu thiết kế Decorator, là một cách để mở rộng các phương thức một cách linh động.
 
-![Crepe](https://viblo.asia/uploads/77b01d67-bfb6-49bc-9c89-13315d2905c5.png)
+Đôi khi chúng ta cần mở rộng một phương thức trong đối tượng, và cách thông thường là chúng ta sẽ kế thừa đối tượng đó. Việc này không phải sai, nhưng trong một vài trường hợp sẽ làm cho mã nguồn trở lên phức tạp hơn chúng ta mong muốn. Đó là lý do chính cho việc ra đời của mẫu thiết kế Decorator, là một cách để mở rộng các phương thức một cách linh động.
 
 ## 1. Vấn đề
 
@@ -16,6 +15,8 @@ Khi chúng ta thực hiện chức năng soạn nội dung mail. Thường chún
 Decorator pattern (còn được gọi là Wrapper), là một design pattern cho phép các hành vi được thêm vào một đối tượng cụ thể, tĩnh hoặc động, mà không ảnh hưởng đến các hành vi của các đối tượng khác trong cùng một class.
 
 ## 3. Những thành phần trong mẫu thiết kế Decorator:
+
+![Crepe](https://viblo.asia/uploads/77b01d67-bfb6-49bc-9c89-13315d2905c5.png)
 
 + **Component**: giao diện (interface) chung để các đối tượng cần thêm chức năng trong quá trình chạy thì triển khai giao diện này.
 + **ConcreteComponent** : Một cài đặt cho giao diện Component mà nó định nghĩa một đối tượng cần thêm các chức năng trong quá trình chạy.
@@ -42,7 +43,7 @@ public interface IPizza {
 
 TomatoPizza và ChickenPizza là những cài đặt, triển khai của IPizza. Chúng cung cấp cụ thể các thể hiện của lớp mà chúng ta cẩn mở rộng trong quá trình chương trình đang chạy.
 
-``java
+```java
 /**
  * Created by TienDQ on 1/28/16.
  */
