@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tìm hiểu mẫu thiết kế Decorator pattern.
+title: [Design Patterns] - Tìm hiểu mẫu thiết kế Decorator pattern.
 tags: [OOP, Design Patterns]
 ---
 
