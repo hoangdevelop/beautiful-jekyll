@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL Partitioning - Tăng tốc độ truy vấn tables hàng triệu dòng.
+title: MySQL Partitioning - Tăng tốc độ truy vấn tables với dữ liệu lên tới hàng triệu dòng.
 tags: [MySQL]
 ---
 
