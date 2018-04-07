@@ -24,7 +24,7 @@ description: Senior PHP Developer!
 # List of links in the navigation bar
 navbar-links:
   Home: "https://hoangdevelop.github.io"
-  About Me: "aboutme"
+  About Me: "about-me"
   Archive: tags
   My Resume / CV: "https://docs.google.com/document/d/1G4duI1dLSVj_aSpOR8bGcUod5ZSor4HLl0K8GbxwUTk/"
 
